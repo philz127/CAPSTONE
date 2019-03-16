@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgapps"
+    tools:context="com.quickblox.q_municate.ui.activities.authorization.SignUpActivity">
+
+    <!--Sign Up Form-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="250dp"
+        >
+
+        <!--Username Edittext-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/signup_editEmail"
+                android:hint="Email"
+                android:padding="5dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:inputType="textEmailAddress"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Password Edittext-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/signup_edtPassword"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:layout_width="350dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Fullname Edittext-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/signup_edtFullname"
+                android:hint="Full Name"
+                android:padding="5dp"
+                android:background="@color/white"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!--Cac Nut-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="25dp">
+
+        <!--Button Signin-->
+        <Button
+            android:id="@+id/signup_btnSignUp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_green_oval"
+            android:text="Sign Up"
+            android:textColor="@color/text_white"
+            android:layout_margin="25dp"/>
+
+        <Button
+            android:id="@+id/signup_btnCancel"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_grey_oval"
+            android:text="Cancel"
+            android:textColor="@color/text_white"
+            android:layout_margin="25dp"/>
+    </LinearLayout>
+</LinearLayout>
